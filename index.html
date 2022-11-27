@@ -11,10 +11,11 @@
 <body>
     <input type="text" id="userName" />
     <br />
+    <br />
     <button id="launchApp" type="button">Launch App</button>
 
     <script>
-        document.addEventListener("load", function () {
+        window.addEventListener("load", function () {
             console.log('Page Loaded...');
             document.getElementById("launchApp").addEventListener('click', function () {
                 const uName = document.getElementById('userName').value;
