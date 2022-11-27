@@ -30,7 +30,7 @@
                 document.body.appendChild(iframe);
             });
 
-            document.getElementById().addEventListener('click', function () {
+            document.getElementById("launchWindow").addEventListener('click', function () {
                 const uName = document.getElementById('userName').value;
                 console.log('Trying to launch window - ' + uName);
                 const url = 'myapp://zxing?image_url=' + uName;
