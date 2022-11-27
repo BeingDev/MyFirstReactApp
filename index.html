@@ -18,6 +18,9 @@
             document.getElementById("launchApp").addEventListener('click', function () {
                 const uName = document.getElementById('userName').value;
                 console.log('Trying to launch the app - ' + uName);
+                var iframe = document.createElement('iframe');
+                iframe.src = 'myapp://zxing?image_url=' + uName;
+                document.body.appendChild(iframe);
             });
         });
     </script>
