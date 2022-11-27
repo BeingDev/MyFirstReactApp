@@ -21,6 +21,7 @@
                 const uName = document.getElementById('userName').value;
                 console.log('Trying to launch the app - ' + uName);
                 var iframe = document.createElement('iframe');
+                iframe.style.display = 'none';
                 iframe.src = 'myapp://zxing?image_url=' + uName;
                 document.body.appendChild(iframe);
             });
