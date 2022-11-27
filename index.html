@@ -12,7 +12,11 @@
     <input type="text" id="userName" />
     <br />
     <br />
-    <button id="launchApp" type="button">Launch App</button>
+    <button id="launchApp" type="button">Launch iFrame</button>
+     <br />
+    <br />
+    <button id="launchWindow" type="button">Launch Window</button>
+
 
     <script>
         window.addEventListener("load", function () {
@@ -24,6 +28,13 @@
                 iframe.style.display = 'none';
                 iframe.src = 'myapp://zxing?image_url=' + uName;
                 document.body.appendChild(iframe);
+            });
+
+            document.getElementById().addEventListener('click', function () {
+                const uName = document.getElementById('userName').value;
+                console.log('Trying to launch window - ' + uName);
+                const url = 'myapp://zxing?image_url=' + uName;
+                window.open(url);
             });
         });
     </script>
